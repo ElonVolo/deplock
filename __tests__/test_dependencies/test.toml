@@ -1,0 +1,53 @@
+
+# This is a deplock TOML document.
+# Its purpose it to define all of the cross-stack dependencies require to build
+# a piece of software. It should serve as the ultimate source of truth and an essential
+# Coordinating Document.
+#
+# The  specific example below is what you might see if you were using deplock to synchronize
+# developer dependencies on a hybrid mobile app project.
+
+[node]
+type = "shell"
+command = "node -v"
+version = "14.3.0"
+
+[npm]
+type = "shell"
+command = "npm -v"
+version = "6.14.5"
+
+[cordova]
+type = "shell"
+command = "cordova -v"
+version = "8.0.0"
+
+[ng-cli]
+type = "npm-global"
+module_name = "@angular/cli"
+version = "9.1.8"
+
+[ruby]
+type = "shell"
+command = "ruby --version"
+version = "2.3.7"
+matcher = "ruby (\d+\.\d+(?:\.\d+)?).*"
+
+[cocoapods]
+type = "shell"
+command = "pod --version"
+version = "1.7.4"
+
+[xcode]
+type = "file"
+format = "plist"
+filepath = "/Applications/Xcode.app/Contents/version.plist"
+datapath = "CFBundleShortVersionString"
+version = "11.3.1"
+
+[android-studio]
+type = "file"
+format = "plist"
+datapath = "CFBundleShortVersionString"
+filepath = "/Applications/Android Studio.app/Contents/Info.plist"
+version = "3.5"

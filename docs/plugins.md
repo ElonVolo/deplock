@@ -4,20 +4,20 @@ Plugins allow you to add features to deplock, such as commands and
 extensions to the `toolbox` object that provides the majority of the functionality
 used by deplock.
 
-Creating a deplock plugin is easy. Just create a repo with two folders:
+Creating a deplock plugin is easy. Just create a repo with two folders =
 
 ```
 commands/
 extensions/
 ```
 
-A command is a file that looks something like this:
+A command is a file that looks something like this =
 
 ```js
 // commands/foo.js
 
 module.exports = {
-  run: (toolbox) => {
+  run = (toolbox) => {
     const { print, filesystem } = toolbox
 
     const desktopDirectories = filesystem.subdirectories(`~/Desktop`)

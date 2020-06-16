@@ -32,7 +32,11 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@types/lodash": "^4.14.155",
     "gluegun": "latest",
+    "lodash": "^4.17.15",
+    "plist": "^3.0.1",
+    "simple-list": "0.0.1",
     "toml": "^3.0.0"
   },
   "devDependencies": {
