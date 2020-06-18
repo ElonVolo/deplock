@@ -24,7 +24,7 @@ Dependencies are specified in a deplock.toml configuration file.
 
 There are three different version number acquisition specifications that can be used in a deplock.toml file. Each row correspondings to a .toml field.
 
-####Shell script dependency specification
+#### Shell script dependency specification
 
 | _  | |
 | --- | --- |
@@ -33,7 +33,7 @@ There are three different version number acquisition specifications that can be 
 | version | The exact version required (semver format) |
 | matcher (optional) | A regular expression with a capturing group. Used to parse the output from command.
 
-####npm global dependency specification
+#### npm global dependency specification
 
 |  _   | |
 | --- | --- |
@@ -41,7 +41,7 @@ There are three different version number acquisition specifications that can be 
 | module_name | The name of the npm global module |
 | version | The exact version required (semver format) |
 
-####Metadata file dependency specification
+#### Metadata file dependency specification
 
 
 | _ | |
