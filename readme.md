@@ -97,13 +97,13 @@ deplock is designed around the principle of "Document All Tribal Lore". I've bee
 
 I've seen considerable amounts of dev-hours wasted simply by one dev not upgrading to the latest version of Android Studio (because tribal lore and they didn't get the memo) and that dev then having to pull off other devs (who got exposed to the tribal lore) to sit down together to figure out why the first dev's Android apps weren't building.
 
-I've found that of these problems magically go away if you force every developer working on the same project to be on the same version of stuff. But in order to do that, you really need a single source of truth that:
+I've found that most of these problems magically go away if you force every developer working on the same project to be on the same version of stuff. But in order to do that, you really need a single source of truth that:
 
 1) Describes everything that has to go into the build of a piee of software.
 2) Naturally resists becoming outdated and people forgetting about it.
 3) Validates automatically.
 
-The deplock.toml file is that single source of truth. It is the coordinating document that specifies all the external dependencies that you need to build your software. And it doesn't go silent out of date; if anyone upgrades to a newer version of Android Studio, for example, deplock validation will fail until the deplock.toml file is updated.
+The deplock.toml file *is* that single source of truth. It is the coordinating document that specifies all the external dependencies that you need to build your software. And it doesn't go silent out of date; if anyone upgrades to a newer version of Android Studio, for example, deplock validation will fail until the deplock.toml file is updated.
 
 
 ## License
